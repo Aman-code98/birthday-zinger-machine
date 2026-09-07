@@ -15,7 +15,7 @@
     --hard-shadow: rgba(36,25,52,0.9);
     --ring: #241934;
   }
-  body::before{
+  body::before, .card-export-frame{
     background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMjAiIGhlaWdodD0iMjIwIiB2aWV3Qm94PSIwIDAgMjIwIDIyMCI+CjxnIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzViNGE3OCIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIG9wYWNpdHk9IjAuMTYiPgogIDxjaXJjbGUgY3g9IjM0IiBjeT0iMzQiIHI9IjE2Ii8+CiAgPGNpcmNsZSBjeD0iMjkiIGN5PSIzMCIgcj0iMS44IiBmaWxsPSIjNWI0YTc4IiBzdHJva2U9Im5vbmUiLz4KICA8Y2lyY2xlIGN4PSIzOSIgY3k9IjMwIiByPSIxLjgiIGZpbGw9IiM1YjRhNzgiIHN0cm9rZT0ibm9uZSIvPgogIDxwYXRoIGQ9Ik0yNSAzOSBRMzQgNDcgNDMgMzkiLz4KPC9nPgo8ZyBmaWxsPSJub25lIiBzdHJva2U9IiM1YjRhNzgiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBvcGFjaXR5PSIwLjE0Ij4KICA8ZWxsaXBzZSBjeD0iMTc2IiBjeT0iNDYiIHJ4PSIxNSIgcnk9IjE5Ii8+CiAgPHBhdGggZD0iTTE3NiA2NSBMMTcyIDcwIEwxODAgNzQgTDE3NCA3OSIvPgogIDxwYXRoIGQ9Ik0xNzAgNjIgTDE3NiA2OCBMMTgyIDYyIFoiIGZpbGw9IiM1YjRhNzgiIHN0cm9rZT0ibm9uZSIvPgo8L2c+CjxnIGZpbGw9IiM1YjRhNzgiIG9wYWNpdHk9IjAuMTUiPgogIDxyZWN0IHg9Ijk2IiB5PSIxOCIgd2lkdGg9IjgiIGhlaWdodD0iOCIgcng9IjIiIHRyYW5zZm9ybT0icm90YXRlKDIwIDEwMCAyMikiLz4KICA8Y2lyY2xlIGN4PSIxNTAiIGN5PSIxMTAiIHI9IjQuNSIvPgogIDxyZWN0IHg9IjIwIiB5PSIxMjAiIHdpZHRoPSI3IiBoZWlnaHQ9IjciIHJ4PSIyIiB0cmFuc2Zvcm09InJvdGF0ZSgtMTUgMjQgMTI0KSIvPgogIDxjaXJjbGUgY3g9IjcwIiBjeT0iMTUwIiByPSI0Ii8+CiAgPHJlY3QgeD0iMTg1IiB5PSIxNTAiIHdpZHRoPSI3IiBoZWlnaHQ9IjciIHJ4PSIyIiB0cmFuc2Zvcm09InJvdGF0ZSgzNSAxODkgMTU0KSIvPgogIDxjaXJjbGUgY3g9IjExOCIgY3k9IjcwIiByPSIzLjUiLz4KPC9nPgo8ZyBmaWxsPSJub25lIiBzdHJva2U9IiM1YjRhNzgiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBvcGFjaXR5PSIwLjE1Ij4KICA8cGF0aCBkPSJNMzAgMTgwIEw1MiAxODAgTDQxIDE1OCBaIi8+CiAgPGNpcmNsZSBjeD0iNDEiIGN5PSIxNTUiIHI9IjMiIGZpbGw9IiM1YjRhNzgiIHN0cm9rZT0ibm9uZSIvPgogIDxjaXJjbGUgY3g9IjM1IiBjeT0iMTc0IiByPSIxLjYiIGZpbGw9IiM1YjRhNzgiIHN0cm9rZT0ibm9uZSIvPgogIDxjaXJjbGUgY3g9IjQ3IiBjeT0iMTc0IiByPSIxLjYiIGZpbGw9IiM1YjRhNzgiIHN0cm9rZT0ibm9uZSIvPgo8L2c+CjxnIGZpbGw9IiM1YjRhNzgiIG9wYWNpdHk9IjAuMTQiPgogIDxwYXRoIGQ9Ik0xMzggMTc4IGwzLjIgNi42IDcuMyAxLTUuMyA1LjEgMS4zIDcuMi02LjUtMy40LTYuNSAzLjQgMS4zLTcuMi01LjMtNS4xIDcuMy0xeiIvPgo8L2c+Cjwvc3ZnPgo=");
   }
   @media (prefers-color-scheme: dark){
@@ -33,7 +33,8 @@
       --hard-shadow: rgba(0,0,0,0.75);
       --ring: #F3EEFF;
     }
-    :root:not([data-theme="light"]) body::before{
+    :root:not([data-theme="light"]) body::before,
+    :root:not([data-theme="light"]) .card-export-frame{
       background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMjAiIGhlaWdodD0iMjIwIiB2aWV3Qm94PSIwIDAgMjIwIDIyMCI+CjxnIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0M2QjhFMCIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIG9wYWNpdHk9IjAuMTQiPgogIDxjaXJjbGUgY3g9IjM0IiBjeT0iMzQiIHI9IjE2Ii8+CiAgPGNpcmNsZSBjeD0iMjkiIGN5PSIzMCIgcj0iMS44IiBmaWxsPSIjQzZCOEUwIiBzdHJva2U9Im5vbmUiLz4KICA8Y2lyY2xlIGN4PSIzOSIgY3k9IjMwIiByPSIxLjgiIGZpbGw9IiNDNkI4RTAiIHN0cm9rZT0ibm9uZSIvPgogIDxwYXRoIGQ9Ik0yNSAzOSBRMzQgNDcgNDMgMzkiLz4KPC9nPgo8ZyBmaWxsPSJub25lIiBzdHJva2U9IiNDNkI4RTAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBvcGFjaXR5PSIwLjEyIj4KICA8ZWxsaXBzZSBjeD0iMTc2IiBjeT0iNDYiIHJ4PSIxNSIgcnk9IjE5Ii8+CiAgPHBhdGggZD0iTTE3NiA2NSBMMTcyIDcwIEwxODAgNzQgTDE3NCA3OSIvPgogIDxwYXRoIGQ9Ik0xNzAgNjIgTDE3NiA2OCBMMTgyIDYyIFoiIGZpbGw9IiNDNkI4RTAiIHN0cm9rZT0ibm9uZSIvPgo8L2c+CjxnIGZpbGw9IiNDNkI4RTAiIG9wYWNpdHk9IjAuMTMiPgogIDxyZWN0IHg9Ijk2IiB5PSIxOCIgd2lkdGg9IjgiIGhlaWdodD0iOCIgcng9IjIiIHRyYW5zZm9ybT0icm90YXRlKDIwIDEwMCAyMikiLz4KICA8Y2lyY2xlIGN4PSIxNTAiIGN5PSIxMTAiIHI9IjQuNSIvPgogIDxyZWN0IHg9IjIwIiB5PSIxMjAiIHdpZHRoPSI3IiBoZWlnaHQ9IjciIHJ4PSIyIiB0cmFuc2Zvcm09InJvdGF0ZSgtMTUgMjQgMTI0KSIvPgogIDxjaXJjbGUgY3g9IjcwIiBjeT0iMTUwIiByPSI0Ii8+CiAgPHJlY3QgeD0iMTg1IiB5PSIxNTAiIHdpZHRoPSI3IiBoZWlnaHQ9IjciIHJ4PSIyIiB0cmFuc2Zvcm09InJvdGF0ZSgzNSAxODkgMTU0KSIvPgogIDxjaXJjbGUgY3g9IjExOCIgY3k9IjcwIiByPSIzLjUiLz4KPC9nPgo8ZyBmaWxsPSJub25lIiBzdHJva2U9IiNDNkI4RTAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBvcGFjaXR5PSIwLjEzIj4KICA8cGF0aCBkPSJNMzAgMTgwIEw1MiAxODAgTDQxIDE1OCBaIi8+CiAgPGNpcmNsZSBjeD0iNDEiIGN5PSIxNTUiIHI9IjMiIGZpbGw9IiNDNkI4RTAiIHN0cm9rZT0ibm9uZSIvPgogIDxjaXJjbGUgY3g9IjM1IiBjeT0iMTc0IiByPSIxLjYiIGZpbGw9IiNDNkI4RTAiIHN0cm9rZT0ibm9uZSIvPgogIDxjaXJjbGUgY3g9IjQ3IiBjeT0iMTc0IiByPSIxLjYiIGZpbGw9IiNDNkI4RTAiIHN0cm9rZT0ibm9uZSIvPgo8L2c+CjxnIGZpbGw9IiNDNkI4RTAiIG9wYWNpdHk9IjAuMTIiPgogIDxwYXRoIGQ9Ik0xMzggMTc4IGwzLjIgNi42IDcuMyAxLTUuMyA1LjEgMS4zIDcuMi02LjUtMy40LTYuNSAzLjQgMS4zLTcuMi01LjMtNS4xIDcuMy0xeiIvPgo8L2c+Cjwvc3ZnPgo=");
     }
   }
@@ -51,7 +52,8 @@
     --hard-shadow: rgba(0,0,0,0.75);
     --ring: #F3EEFF;
   }
-  :root[data-theme="dark"] body::before{
+  :root[data-theme="dark"] body::before,
+  :root[data-theme="dark"] .card-export-frame{
     background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMjAiIGhlaWdodD0iMjIwIiB2aWV3Qm94PSIwIDAgMjIwIDIyMCI+CjxnIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0M2QjhFMCIgc3Ryb2tlLXdpZHRoPSIzIiBzdHJva2UtbGluZWNhcD0icm91bmQiIG9wYWNpdHk9IjAuMTQiPgogIDxjaXJjbGUgY3g9IjM0IiBjeT0iMzQiIHI9IjE2Ii8+CiAgPGNpcmNsZSBjeD0iMjkiIGN5PSIzMCIgcj0iMS44IiBmaWxsPSIjQzZCOEUwIiBzdHJva2U9Im5vbmUiLz4KICA8Y2lyY2xlIGN4PSIzOSIgY3k9IjMwIiByPSIxLjgiIGZpbGw9IiNDNkI4RTAiIHN0cm9rZT0ibm9uZSIvPgogIDxwYXRoIGQ9Ik0yNSAzOSBRMzQgNDcgNDMgMzkiLz4KPC9nPgo8ZyBmaWxsPSJub25lIiBzdHJva2U9IiNDNkI4RTAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBvcGFjaXR5PSIwLjEyIj4KICA8ZWxsaXBzZSBjeD0iMTc2IiBjeT0iNDYiIHJ4PSIxNSIgcnk9IjE5Ii8+CiAgPHBhdGggZD0iTTE3NiA2NSBMMTcyIDcwIEwxODAgNzQgTDE3NCA3OSIvPgogIDxwYXRoIGQ9Ik0xNzAgNjIgTDE3NiA2OCBMMTgyIDYyIFoiIGZpbGw9IiNDNkI4RTAiIHN0cm9rZT0ibm9uZSIvPgo8L2c+CjxnIGZpbGw9IiNDNkI4RTAiIG9wYWNpdHk9IjAuMTMiPgogIDxyZWN0IHg9Ijk2IiB5PSIxOCIgd2lkdGg9IjgiIGhlaWdodD0iOCIgcng9IjIiIHRyYW5zZm9ybT0icm90YXRlKDIwIDEwMCAyMikiLz4KICA8Y2lyY2xlIGN4PSIxNTAiIGN5PSIxMTAiIHI9IjQuNSIvPgogIDxyZWN0IHg9IjIwIiB5PSIxMjAiIHdpZHRoPSI3IiBoZWlnaHQ9IjciIHJ4PSIyIiB0cmFuc2Zvcm09InJvdGF0ZSgtMTUgMjQgMTI0KSIvPgogIDxjaXJjbGUgY3g9IjcwIiBjeT0iMTUwIiByPSI0Ii8+CiAgPHJlY3QgeD0iMTg1IiB5PSIxNTAiIHdpZHRoPSI3IiBoZWlnaHQ9IjciIHJ4PSIyIiB0cmFuc2Zvcm09InJvdGF0ZSgzNSAxODkgMTU0KSIvPgogIDxjaXJjbGUgY3g9IjExOCIgY3k9IjcwIiByPSIzLjUiLz4KPC9nPgo8ZyBmaWxsPSJub25lIiBzdHJva2U9IiNDNkI4RTAiIHN0cm9rZS13aWR0aD0iMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBvcGFjaXR5PSIwLjEzIj4KICA8cGF0aCBkPSJNMzAgMTgwIEw1MiAxODAgTDQxIDE1OCBaIi8+CiAgPGNpcmNsZSBjeD0iNDEiIGN5PSIxNTUiIHI9IjMiIGZpbGw9IiNDNkI4RTAiIHN0cm9rZT0ibm9uZSIvPgogIDxjaXJjbGUgY3g9IjM1IiBjeT0iMTc0IiByPSIxLjYiIGZpbGw9IiNDNkI4RTAiIHN0cm9rZT0ibm9uZSIvPgogIDxjaXJjbGUgY3g9IjQ3IiBjeT0iMTc0IiByPSIxLjYiIGZpbGw9IiNDNkI4RTAiIHN0cm9rZT0ibm9uZSIvPgo8L2c+CjxnIGZpbGw9IiNDNkI4RTAiIG9wYWNpdHk9IjAuMTIiPgogIDxwYXRoIGQ9Ik0xMzggMTc4IGwzLjIgNi42IDcuMyAxLTUuMyA1LjEgMS4zIDcuMi02LjUtMy40LTYuNSAzLjQgMS4zLTcuMi01LjMtNS4xIDcuMy0xeiIvPgo8L2c+Cjwvc3ZnPgo=");
   }
 
@@ -254,9 +256,17 @@
     position: sticky;
     top: 20px;
   }
+  .card-export-frame{
+    position: relative;
+    background-color: var(--paper);
+    background-repeat: repeat;
+    background-size: 220px 220px;
+    border-radius: 24px;
+    padding: 34px 24px 26px;
+  }
   .tape{
     position: absolute;
-    top: -14px;
+    top: 14px;
     left: 50%;
     transform: translateX(-50%) rotate(-3deg);
     width: 120px;
@@ -265,6 +275,27 @@
     border: 2px solid var(--ink);
     opacity: 0.92;
     z-index: 2;
+  }
+  .card-actions{
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+  #copy-image-btn{
+    background: var(--accent-3);
+    color: var(--accent-3-ink);
+  }
+  #copy-image-btn:disabled{
+    opacity: 0.65;
+    cursor: default;
+  }
+  .copy-status{
+    font-size: 0.82rem;
+    color: var(--ink-soft);
+    min-height: 1.2em;
+    text-align: center;
   }
   .card{
     background: var(--card);
@@ -456,17 +487,24 @@
     </section>
 
     <section class="card-stage" aria-label="Generated birthday card">
-      <div class="tape" aria-hidden="true"></div>
-      <div class="card" data-cursor="🎈">
-        <div class="card-label">
-          <span>Card no. <span id="card-number">001</span></span>
-          <span class="example-flag" id="example-flag">Sample card</span>
+      <div class="card-export-frame" id="card-export-frame">
+        <div class="tape" aria-hidden="true"></div>
+        <div class="card" data-cursor="🎈">
+          <div class="card-label">
+            <span>Card no. <span id="card-number">001</span></span>
+            <span class="example-flag" id="example-flag">Sample card</span>
+          </div>
+          <h2 class="card-headline" id="card-headline">Happy Birthday, Priya!</h2>
+          <div class="card-body" id="card-body" aria-live="polite">
+            <!-- filled by JS -->
+          </div>
+          <p class="card-sign" id="card-sign">— The Birthday Zinger Machine, probably not HR-approved</p>
         </div>
-        <h2 class="card-headline" id="card-headline">Happy Birthday, Priya!</h2>
-        <div class="card-body" id="card-body" aria-live="polite">
-          <!-- filled by JS -->
-        </div>
-        <p class="card-sign" id="card-sign">— The Birthday Zinger Machine, probably not HR-approved</p>
+      </div>
+
+      <div class="card-actions">
+        <button type="button" id="copy-image-btn" data-cursor="📋">📋 Copy card as image</button>
+        <span id="copy-status" class="copy-status" role="status" aria-live="polite"></span>
       </div>
 
       <div class="history-panel">
@@ -485,60 +523,66 @@
   </main>
 </div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 <script>
 (function(){
   "use strict";
 
   var openers = [
-    "Dearest {name},",
-    "Attention, {name}:",
-    "To {name}, party animal and questionable decision-maker,",
-    "{name}! Legend. Icon. Person who somehow survived another year.",
-    "Breaking news from the cake division, {name}:",
-    "Dear {name}, light of the group chat and menace to birthday budgets,"
+    "Well well well, {name}, look who's still alive.",
+    "{name}. Legend, disaster, walking liability — happy birthday.",
+    "Dear {name}, congratulations on aging, the one thing you're actually consistently good at.",
+    "Breaking news: {name} has survived another year despite numerous questionable decisions.",
+    "To {name}, whose life choices we do not endorse but whose birthday we will absolutely celebrate.",
+    "Attention everyone: {name} is now officially one year closer to yelling at clouds professionally."
   ];
 
   var ageJokes = [
-    "{age}?! At this rate you'll be a certified antique before you're a certified adult.",
-    "Happy {age}th. You're not old, you're just extensively field-tested.",
-    "{age} years old and still can't parallel park. Growth is a journey, not a destination.",
-    "Congrats on {age} laps around the sun — Mercury is filing a restraining order.",
-    "They say {age} is the new {ageMinus}. Whoever 'they' are, they owe you money.",
-    "At {age}, your back now makes more noise than the candles do when you blow them out.",
-    "{age} candles on one cake is basically a fire-code violation. Bold move, truly.",
-    "You've officially been alive for {age} years, which means you've earned the right to leave any party without explaining why."
+    "{age}?! Yikes. At this point your knees have their own weather forecast.",
+    "Happy {age}th. You're not aging gracefully, you're aging loudly, with commentary.",
+    "{age} years old and you still can't hold your liquor like you used to. Respect the decline.",
+    "Congrats on {age} laps around the sun — your liver filed for early retirement years ago.",
+    "They say {age} is the new {ageMinus}. Whoever said that clearly hasn't seen your hairline.",
+    "At {age}, you now make the same noises standing up that you used to make on a rollercoaster.",
+    "{age} candles on one cake is a legitimate fire hazard and also a mild cry for help.",
+    "You've officially survived {age} years, which qualifies you to complain about literally anything and be right.",
+    "Happy {age}th — old enough to know better, still too stubborn to act like it.",
+    "{age} and still lying about your age on dating apps? Iconic, honestly."
   ];
 
   var hobbyJokes = [
-    "I hear you're deeply committed to {hobby} — impressive, considering you can't commit to finishing a TV series.",
-    "Someone this obsessed with {hobby} should really put it on a business card.",
-    "Happy birthday to the {hobby} legend nobody asked for but everybody needed.",
-    "May your love of {hobby} outlive your enthusiasm for replying to texts.",
-    "{hobby}? Bold of you to have a whole personality trait.",
-    "We looked into your {hobby} habit for this card and, frankly, we have concerns and also respect.",
-    "Here's to another year of {hobby}, and to everyone who has to hear about it."
+    "I hear you're deeply committed to {hobby} — a solid way to avoid your actual problems.",
+    "Someone this obsessed with {hobby} should really get a therapist instead. Just a thought.",
+    "Happy birthday to the {hobby} legend who peaked emotionally sometime around 2016.",
+    "May your love of {hobby} outlive your credit score.",
+    "{hobby}? Bold of you to have a personality that isn't just complaining about work.",
+    "We looked into your {hobby} habit for this card and, frankly, it explains a lot.",
+    "Here's to another year of {hobby}, and to everyone forced to hear about it at parties.",
+    "You approach {hobby} the way other people approach therapy — badly, and slightly buzzed."
   ];
 
   var noHobbyJokes = [
-    "Rumor has it your only hobby is claiming you have hobbies whenever someone asks at a party.",
-    "You listed zero hobbies, which is itself a personality trait we're choosing to celebrate today.",
-    "Your hobby, as far as we can tell, is being suspiciously good at getting out of hobbies."
+    "Rumor has it your only hobby is day-drinking and lying about having hobbies at parties.",
+    "You listed zero hobbies, which tracks, given your well-documented commitment issues.",
+    "Your hobby, as far as we can tell, is complaining and somehow still getting invited places."
   ];
 
   var closers = [
-    "Try not to peak before noon, {name} — save some magic for the cake.",
-    "Blow out the candles before the smoke alarm gets involved, {name}.",
-    "Here's to another year of {name} being chaotic and, somehow, still lovable.",
-    "Cheers to you, {name}. May your cake be bigger than your problems and your nap longer than your to-do list.",
-    "Go forth and be insufferable about it being your birthday, {name}. You've earned one full day.",
-    "In summary, {name}: happy birthday, drink some water, and text your mother back."
+    "Try not to peak before happy hour, {name} — pace yourself, champion.",
+    "Blow out the candles before your smoker's cough does it for you, {name}.",
+    "Here's to another year of {name} being a chaotic disaster we all inexplicably tolerate.",
+    "Cheers to you, {name}. May your hangover be gentle and your regrets be manageable.",
+    "Go forth and be insufferable about it being your birthday, {name} — you've earned one (1) day.",
+    "In summary, {name}: happy birthday, drink responsibly-ish, and finally call your mother back.",
+    "Here's to {name} — older, wiser, and somehow still worse at adulting than expected.",
+    "May your birthday be free of judgment and heavy on the free drinks, {name}."
   ];
 
   var signOffs = [
-    "— The Birthday Zinger Machine, probably not HR-approved",
-    "— Sent with love, questionable jokes, and zero editorial oversight",
-    "— Certified 100% roasted, 100% affectionate",
-    "— From the desk of someone who cares about you and also finds you funny"
+    "— The Birthday Zinger Machine, not licensed, not sorry",
+    "— Sent with love, bad jokes, and zero HR oversight",
+    "— Certified 100% roasted, 100% still invited to the party",
+    "— From the desk of someone who loves you despite overwhelming evidence"
   ];
 
   function pick(arr){ return arr[Math.floor(Math.random() * arr.length)]; }
@@ -857,6 +901,106 @@
       ctx.clearRect(0, 0, canvas.width, canvas.height);
     }
   }
+
+  // ---- Copy card as image ----
+  var exportFrame = document.getElementById("card-export-frame");
+  var copyImageBtn = document.getElementById("copy-image-btn");
+  var copyStatusEl = document.getElementById("copy-status");
+  var copyStatusTimer = null;
+
+  function setCopyStatus(msg, isError){
+    copyStatusEl.textContent = msg;
+    copyStatusEl.style.color = isError ? "var(--accent)" : "var(--ink-soft)";
+    if (copyStatusTimer) clearTimeout(copyStatusTimer);
+    if (msg){
+      copyStatusTimer = setTimeout(function(){ copyStatusEl.textContent = ""; }, 4500);
+    }
+  }
+
+  // Last-resort fallback: a plain <a download> link. This does nothing inside
+  // Claude's own artifact preview (the sandbox blocks page-initiated downloads),
+  // but works normally once the page is hosted on GitHub Pages or any other host.
+  function anchorDownload(canvas){
+    try{
+      var link = document.createElement("a");
+      link.download = "birthday-card.png";
+      link.href = canvas.toDataURL("image/png");
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      setCopyStatus("Clipboard image copy isn't supported here — downloaded it instead.", false);
+    } catch (e){
+      setCopyStatus("Couldn't copy or download the image in this browser.", true);
+    }
+  }
+
+  // When clipboard image-copy isn't available, try the platform's own
+  // save prompt (works inside Claude's artifact viewer) before falling
+  // back to a plain browser download (works on a normal web host).
+  function saveViaPlatformOrAnchor(blob, canvas){
+    if (window.claude && typeof window.claude.use === "function"){
+      return window.claude.use("downloads").then(function(downloads){
+        if (!downloads){
+          anchorDownload(canvas);
+          return;
+        }
+        return downloads.save({ filename: "birthday-card.png", data: blob }).then(function(){
+          setCopyStatus("Clipboard copy isn't available here — saved the image instead.", false);
+        }).catch(function(err){
+          if (err && err.code === "declined"){
+            setCopyStatus("Save cancelled.", false);
+            return;
+          }
+          anchorDownload(canvas);
+        });
+      }).catch(function(){
+        anchorDownload(canvas);
+      });
+    }
+    anchorDownload(canvas);
+    return Promise.resolve();
+  }
+
+  function renderCardCanvas(){
+    return html2canvas(exportFrame, {
+      backgroundColor: null,
+      useCORS: true,
+      scale: Math.max(2, window.devicePixelRatio || 1)
+    });
+  }
+
+  copyImageBtn.addEventListener("click", function(){
+    if (typeof html2canvas !== "function"){
+      setCopyStatus("Image renderer failed to load — check your connection and try again.", true);
+      return;
+    }
+    copyImageBtn.disabled = true;
+    setCopyStatus("Rendering card…", false);
+
+    renderCardCanvas().then(function(canvas){
+      canvas.toBlob(function(blob){
+        if (!blob){
+          saveViaPlatformOrAnchor(null, canvas).then(function(){ copyImageBtn.disabled = false; });
+          return;
+        }
+        var done = function(){ copyImageBtn.disabled = false; };
+        if (navigator.clipboard && window.ClipboardItem){
+          navigator.clipboard.write([
+            new window.ClipboardItem({ "image/png": blob })
+          ]).then(function(){
+            setCopyStatus("Copied! Paste it anywhere. 🎉", false);
+          }).catch(function(){
+            return saveViaPlatformOrAnchor(blob, canvas);
+          }).then(done, done);
+        } else {
+          saveViaPlatformOrAnchor(blob, canvas).then(done, done);
+        }
+      }, "image/png");
+    }).catch(function(){
+      setCopyStatus("Couldn't render the card as an image. Try again?", true);
+      copyImageBtn.disabled = false;
+    });
+  });
 
   // ---- Funny custom cursor ----
   var isFinePointer = window.matchMedia && window.matchMedia("(pointer: fine)").matches;
